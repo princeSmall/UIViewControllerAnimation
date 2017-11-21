@@ -7,8 +7,10 @@
 //
 
 #import "PresentViewController.h"
+#import "ScaleAnimationView.h"
 
 @interface PresentViewController ()
+@property (nonatomic,strong)UIButton * backBtn;
 
 @end
 
@@ -16,14 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.backBtn];
+   
     // Do any additional setup after loading the view.
 }
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+- (UIButton *)backBtn{
+    if (_backBtn == nil) {
+        _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2.0-60, 50, 120, 60)];
+        _backBtn.backgroundColor = [UIColor redColor];
+        [_backBtn setTitle:@"点我返回" forState:UIControlStateNormal];
+        [_backBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _backBtn;
 }
-#pragma Mark - UIViewControllerTransitioningDelegate
+
+- (void)dismiss{
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

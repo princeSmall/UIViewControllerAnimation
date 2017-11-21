@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D5B2B171FC2BECB00498E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B161FC2BECB00498E7C /* AppDelegate.m */; };
-		5D5B2B1A1FC2BECB00498E7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B191FC2BECB00498E7C /* ViewController.m */; };
+		5D5B2B1A1FC2BECB00498E7C /* ViewControllerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B191FC2BECB00498E7C /* ViewControllerAnimation.m */; };
 		5D5B2B1D1FC2BECB00498E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B2B1B1FC2BECB00498E7C /* Main.storyboard */; };
 		5D5B2B201FC2BECB00498E7C /* ViewControllerAnimation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B1E1FC2BECB00498E7C /* ViewControllerAnimation.xcdatamodeld */; };
 		5D5B2B221FC2BECB00498E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B2B211FC2BECB00498E7C /* Assets.xcassets */; };
@@ -20,14 +20,16 @@
 		5D5B2B3B1FC3AFD600498E7C /* PushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B3A1FC3AFD600498E7C /* PushAnimation.m */; };
 		5D5B2B3E1FC3B0CD00498E7C /* PushGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B3D1FC3B0CD00498E7C /* PushGreenViewController.m */; };
 		5D5B2B411FC3C7CA00498E7C /* PushRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B401FC3C7CA00498E7C /* PushRedViewController.m */; };
+		5DB0444A1FC403F7001F4EE8 /* ScaleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB044481FC403F7001F4EE8 /* ScaleAnimationView.m */; };
+		5DB0444D1FC40463001F4EE8 /* ScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0444C1FC40463001F4EE8 /* ScaleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D5B2B121FC2BECB00498E7C /* ViewControllerAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5B2B151FC2BECB00498E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D5B2B161FC2BECB00498E7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D5B2B181FC2BECB00498E7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D5B2B191FC2BECB00498E7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D5B2B181FC2BECB00498E7C /* ViewControllerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerAnimation.h; sourceTree = "<group>"; };
+		5D5B2B191FC2BECB00498E7C /* ViewControllerAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAnimation.m; sourceTree = "<group>"; };
 		5D5B2B1C1FC2BECB00498E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D5B2B1F1FC2BECB00498E7C /* ViewControllerAnimation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViewControllerAnimation.xcdatamodel; sourceTree = "<group>"; };
 		5D5B2B211FC2BECB00498E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		5D5B2B3D1FC3B0CD00498E7C /* PushGreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushGreenViewController.m; sourceTree = "<group>"; };
 		5D5B2B3F1FC3C7CA00498E7C /* PushRedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushRedViewController.h; sourceTree = "<group>"; };
 		5D5B2B401FC3C7CA00498E7C /* PushRedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushRedViewController.m; sourceTree = "<group>"; };
+		5DB044481FC403F7001F4EE8 /* ScaleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleAnimationView.m; sourceTree = "<group>"; };
+		5DB044491FC403F7001F4EE8 /* ScaleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleAnimationView.h; sourceTree = "<group>"; };
+		5DB0444B1FC40463001F4EE8 /* ScaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaleViewController.h; sourceTree = "<group>"; };
+		5DB0444C1FC40463001F4EE8 /* ScaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,10 @@
 			children = (
 				5D5B2B151FC2BECB00498E7C /* AppDelegate.h */,
 				5D5B2B161FC2BECB00498E7C /* AppDelegate.m */,
-				5D5B2B181FC2BECB00498E7C /* ViewController.h */,
-				5D5B2B191FC2BECB00498E7C /* ViewController.m */,
+				5D5B2B181FC2BECB00498E7C /* ViewControllerAnimation.h */,
+				5D5B2B191FC2BECB00498E7C /* ViewControllerAnimation.m */,
 				5D5B2B1B1FC2BECB00498E7C /* Main.storyboard */,
+				5DB044471FC403F7001F4EE8 /* ScaleViewAnimation */,
 				5D5B2B2E1FC2C0A100498E7C /* PresentAnimation */,
 				5D5B2B2F1FC2C0A100498E7C /* PushAnimation */,
 				5D5B2B211FC2BECB00498E7C /* Assets.xcassets */,
@@ -118,6 +125,17 @@
 				5D5B2B401FC3C7CA00498E7C /* PushRedViewController.m */,
 			);
 			path = PushAnimation;
+			sourceTree = "<group>";
+		};
+		5DB044471FC403F7001F4EE8 /* ScaleViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5DB044491FC403F7001F4EE8 /* ScaleAnimationView.h */,
+				5DB044481FC403F7001F4EE8 /* ScaleAnimationView.m */,
+				5DB0444B1FC40463001F4EE8 /* ScaleViewController.h */,
+				5DB0444C1FC40463001F4EE8 /* ScaleViewController.m */,
+			);
+			path = ScaleViewAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,16 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5B2B1A1FC2BECB00498E7C /* ViewController.m in Sources */,
+				5D5B2B1A1FC2BECB00498E7C /* ViewControllerAnimation.m in Sources */,
 				5D5B2B171FC2BECB00498E7C /* AppDelegate.m in Sources */,
 				5D5B2B3E1FC3B0CD00498E7C /* PushGreenViewController.m in Sources */,
 				5D5B2B3B1FC3AFD600498E7C /* PushAnimation.m in Sources */,
 				5D5B2B411FC3C7CA00498E7C /* PushRedViewController.m in Sources */,
 				5D5B2B281FC2BECB00498E7C /* main.m in Sources */,
 				5D5B2B351FC2C28300498E7C /* DismissAnimation.m in Sources */,
+				5DB0444D1FC40463001F4EE8 /* ScaleViewController.m in Sources */,
 				5D5B2B381FC2C40100498E7C /* PresentViewController.m in Sources */,
 				5D5B2B201FC2BECB00498E7C /* ViewControllerAnimation.xcdatamodeld in Sources */,
 				5D5B2B321FC2C25C00498E7C /* PresentAnimation.m in Sources */,
+				5DB0444A1FC403F7001F4EE8 /* ScaleAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

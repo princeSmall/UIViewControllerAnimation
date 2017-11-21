@@ -6,7 +6,7 @@
 //  Copyright © 2017年 tong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewControllerAnimation.h"
 
 @interface PushGreenViewController : UIViewController
 
