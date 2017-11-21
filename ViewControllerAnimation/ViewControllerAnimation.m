@@ -52,7 +52,7 @@
 }
 - (NSArray *)animationArray{
     if (_animationArray == nil) {
-        _animationArray = [NSArray arrayWithObjects:@"PresentViewController",@"PushViewController",@"ScaleAnimationView",@"",@"", nil];
+        _animationArray = [NSArray arrayWithObjects:@"PresentViewController",@"PushViewController",@"ScaleAnimationView", nil];
     }
     return _animationArray;
 }
