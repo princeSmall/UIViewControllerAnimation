@@ -10,8 +10,10 @@
 #import "ScaleAnimationView.h"
 
 @interface ScaleViewController ()
-@property (nonatomic,strong)ScaleAnimationView * scaleView;
-@property (nonatomic,strong)ScaleAnimationView * scaleView1;
+@property (nonatomic,strong)ScaleAnimationView * orangeView;
+@property (nonatomic,strong)ScaleAnimationView * purpleView;
+@property (nonatomic,strong)ScaleAnimationView * blueView;
+@property (nonatomic,strong)ScaleAnimationView * yellowView;
 
 @end
 
@@ -20,33 +22,59 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.scaleView];
-    [self.view addSubview:self.scaleView1];
+    [self.view addSubview:self.orangeView];
+    [self.view addSubview:self.purpleView];
+    [self.view addSubview:self.yellowView];
+    [self.view addSubview:self.blueView];
     // Do any additional setup after loading the view.
 }
-- (ScaleAnimationView *)scaleView{
-    if (_scaleView == nil) {
-        _scaleView = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(250, 400, 100, 100)];
-        _scaleView.backgroundColor = [UIColor orangeColor];
-        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(scale)];
-        [_scaleView addGestureRecognizer:tapGesture];
+- (ScaleAnimationView *)orangeView{
+    if (_orangeView == nil) {
+        _orangeView = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(250, 400, 100, 100)];
+        _orangeView.backgroundColor = [UIColor orangeColor];
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(orangeScale)];
+        [_orangeView addGestureRecognizer:tapGesture];
     }
-    return _scaleView;
+    return _orangeView;
 }
-- (ScaleAnimationView *)scaleView1{
-    if (_scaleView1 == nil) {
-        _scaleView1 = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(50, 400, 100, 100)];
-        _scaleView1.backgroundColor = [UIColor purpleColor];
-        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(scale1)];
-        [_scaleView1 addGestureRecognizer:tapGesture];
+- (ScaleAnimationView *)purpleView{
+    if (_purpleView == nil) {
+        _purpleView = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(50, 400, 100, 100)];
+        _purpleView.backgroundColor = [UIColor purpleColor];
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(purpleScale)];
+        [_purpleView addGestureRecognizer:tapGesture];
     }
-    return _scaleView1;
+    return _purpleView;
 }
-- (void)scale{
-    [self.scaleView scaleView:self.scaleView CGFloatX:250 CGFloatY:400 CGFloatW:100 CGFloatH:100];
+- (ScaleAnimationView *)blueView{
+    if (_blueView == nil) {
+        _blueView = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(50, 200, 100, 100)];
+        _blueView.backgroundColor = [UIColor blueColor];
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(blueScale)];
+        [_blueView addGestureRecognizer:tapGesture];
+    }
+    return _blueView;
 }
-- (void)scale1{
-    [self.scaleView1 scaleView:self.scaleView1 CGFloatX:50 CGFloatY:400 CGFloatW:100 CGFloatH:100];
+- (ScaleAnimationView *)yellowView{
+    if (_yellowView == nil) {
+        _yellowView = [[ScaleAnimationView alloc]initWithFrame:CGRectMake(250, 200, 100, 100)];
+        _yellowView.backgroundColor = [UIColor yellowColor];
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(yellowScale)];
+        [_yellowView addGestureRecognizer:tapGesture];
+    }
+    return _yellowView;
+}
+- (void)orangeScale{
+    [self.orangeView scaleView:self.orangeView CGFloatX:250 CGFloatY:400 CGFloatW:100 CGFloatH:100];
+}
+- (void)purpleScale{
+    [self.purpleView scaleView:self.purpleView CGFloatX:50 CGFloatY:400 CGFloatW:100 CGFloatH:100];
+}
+- (void)blueScale{
+    [self.blueView scaleView:self.blueView CGFloatX:50 CGFloatY:200 CGFloatW:100 CGFloatH:100];
+}
+- (void)yellowScale{
+    [self.yellowView scaleView:self.yellowView CGFloatX:250 CGFloatY:200 CGFloatW:100 CGFloatH:100];
 }
 
 
