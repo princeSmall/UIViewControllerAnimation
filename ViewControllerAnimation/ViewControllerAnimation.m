@@ -35,16 +35,30 @@
     self.title = @"ViewControllerAnimation";
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"右翻页" style:UIBarButtonItemStyleDone target:self action:@selector(right)];
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"左翻页" style:UIBarButtonItemStyleDone target:self action:@selector(left)];
-    self.pushGVC = [[PushGreenViewController alloc]init];
-    self.pushRVC = [[PushRedViewController alloc]init];
-    self.scaleVC = [[ScaleViewController alloc]init];
-    
     [self.view addSubview:self.animationTableView];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (PushRedViewController *)pushRVC{
+    if (!_pushRVC) {
+        _pushRVC = [PushRedViewController new];
+    }
+    return _pushRVC;
+}
+- (PushGreenViewController *)pushGVC{
+    if (!_pushGVC) {
+        _pushGVC = [PushGreenViewController new];
+    }
+    return _pushGVC;
+}
+- (ScaleViewController *)scaleVC{
+    if (!_scaleVC) {
+        _scaleVC = [ScaleViewController new];
+    }
+    return _scaleVC;
+}
 - (UITableView *)animationTableView {
     if (_animationTableView == nil) {
-        _animationTableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+        _animationTableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
         _animationTableView.delegate = self;
         _animationTableView.dataSource = self;
     }

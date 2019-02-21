@@ -10,6 +10,6 @@
 
 @interface ScaleAnimationView : UIView
 
-- (void)scaleView:(UIView *)view CGFloatX:(CGFloat)x CGFloatY:(CGFloat)y CGFloatW:(CGFloat)w CGFloatH:(CGFloat)h;
+- (void)scaleCGFloatX:(CGFloat)x CGFloatY:(CGFloat)y CGFloatW:(CGFloat)w CGFloatH:(CGFloat)h;
 
 @end

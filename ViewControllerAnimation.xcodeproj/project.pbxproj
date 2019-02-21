@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C37B07F221E498400481AB4 /* MoveAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37B07E221E498400481AB4 /* MoveAnimationView.m */; };
 		5D5B2B171FC2BECB00498E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B161FC2BECB00498E7C /* AppDelegate.m */; };
 		5D5B2B1A1FC2BECB00498E7C /* ViewControllerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B2B191FC2BECB00498E7C /* ViewControllerAnimation.m */; };
 		5D5B2B1D1FC2BECB00498E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B2B1B1FC2BECB00498E7C /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C37B07D221E498400481AB4 /* MoveAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveAnimationView.h; sourceTree = "<group>"; };
+		1C37B07E221E498400481AB4 /* MoveAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveAnimationView.m; sourceTree = "<group>"; };
 		5D5B2B121FC2BECB00498E7C /* ViewControllerAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5B2B151FC2BECB00498E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D5B2B161FC2BECB00498E7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 			children = (
 				5DB044491FC403F7001F4EE8 /* ScaleAnimationView.h */,
 				5DB044481FC403F7001F4EE8 /* ScaleAnimationView.m */,
+				1C37B07D221E498400481AB4 /* MoveAnimationView.h */,
+				1C37B07E221E498400481AB4 /* MoveAnimationView.m */,
 				5DB0444B1FC40463001F4EE8 /* ScaleViewController.h */,
 				5DB0444C1FC40463001F4EE8 /* ScaleViewController.m */,
 			);
@@ -218,6 +223,7 @@
 				5D5B2B351FC2C28300498E7C /* DismissAnimation.m in Sources */,
 				5DB0444D1FC40463001F4EE8 /* ScaleViewController.m in Sources */,
 				5D5B2B381FC2C40100498E7C /* PresentViewController.m in Sources */,
+				1C37B07F221E498400481AB4 /* MoveAnimationView.m in Sources */,
 				5D5B2B201FC2BECB00498E7C /* ViewControllerAnimation.xcdatamodeld in Sources */,
 				5D5B2B321FC2C25C00498E7C /* PresentAnimation.m in Sources */,
 				5DB0444A1FC403F7001F4EE8 /* ScaleAnimationView.m in Sources */,

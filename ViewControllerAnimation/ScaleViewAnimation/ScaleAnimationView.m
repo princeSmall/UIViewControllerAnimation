@@ -17,16 +17,16 @@
     // Drawing code
 }
 */
-- (void)scaleView:(UIView *)view CGFloatX:(CGFloat)x CGFloatY:(CGFloat)y CGFloatW:(CGFloat)w CGFloatH:(CGFloat)h{
+- (void)scaleCGFloatX:(CGFloat)x CGFloatY:(CGFloat)y CGFloatW:(CGFloat)w CGFloatH:(CGFloat)h{
     CGFloat scaleW = self.window.frame.size.width / w;
     CGFloat scaleH = self.window.frame.size.height / h;
     CGFloat W = scaleW * 50 - 50 - x;
     CGFloat H = scaleH * 50 - 50 - y;
     [UIView animateWithDuration:1.0 animations:^{
-        view.transform =CGAffineTransformConcat(CGAffineTransformMakeScale(scaleW, scaleH), CGAffineTransformMakeTranslation(W,H));
+        self.transform =CGAffineTransformConcat(CGAffineTransformMakeScale(scaleW, scaleH), CGAffineTransformMakeTranslation(W,H));
     } completion:^(BOOL finished) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            view.transform = CGAffineTransformIdentity;
+            self.transform = CGAffineTransformIdentity;
         });
         
     }];
